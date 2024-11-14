@@ -1,9 +1,8 @@
 package com.campuscoride.entity;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Column;
 import java.util.Objects;
 
 @Entity (name = "Location")
@@ -15,7 +14,7 @@ public class Location {
     @GenericGenerator(name = "native", strategy = "native")
     private Integer id;
 
-    @Column(name = "location_name")
+    @Column (name = "location_name")
     private String locationName;
 
     private double lat;
